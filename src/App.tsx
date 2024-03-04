@@ -1,35 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React from 'react';
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className='ichiban-kuji__main-container'>
+      <div className='ichiban-kuji__language-button'>
+        <div className='ichiban-kuji__traditional-chinese-button'>繁體中文</div>
+        <div className='ichiban-kuji__english-button'>English</div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+      <h1 className='ichiban-kuji__main-title'>一番くじONLINE</h1>
+      <div className='ichiban-kuji__enter-button'>按此進入</div>
+    </div>
+  );
+};
 
-export default App
+export default App;
